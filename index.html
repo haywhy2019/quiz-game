@@ -1,0 +1,82 @@
+<!-- Step 1
+•	Create a simple mock-up.
+•	create  project structure (html , css, js files and folders)
+•	link in files, jquery and bootstrap
+•	add static texts
+•	add question and answer section 
+
+Step 2
+•	get a list of questions and answers. You can have as many questions as possible but can decide to randomly select 5 per quiz session.
+•	create an array of objects to save these data. It should look like this;
+const qAndA = [
+	{
+		question: “What is the capital city?”,
+		options: [“Lagos”, “Abuja”, “Ibadan”, “Jos”],
+		answer: “Abuja”
+	},
+{
+		question: “How old is the president?”,
+		options: [“29”, “49”, “99”, “76”],
+		answer: “76”
+} 
+	...
+];
+
+Step 3
+on page load,
+•	select randomly, 5 q and a objects  from the qAndA list
+•	start a loop to run 5 times
+•	render the first question and options in the question section or div
+•	maintain a score point counter , initial value is 0
+	
+Step 4
+on clicking an option, 
+•	take the selected option in a variable
+•	check if correct
+•	increase score point if correct
+•	clear contents of question section
+•	render the next question from the 5 selected
+continue this loop till all 5 questions are answered 
+
+Step 5
+on completion,
+•	replace question section with success section
+•	populate success section with result and congratulation messages 
+
+Step 6
+•	Styling
+
+ -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Foodie quiz</title>
+</head>
+
+<body>
+    <H3>THINK YOU ARE A FOODIE</H3>
+    <h1>TAKE THE FOODIE TEST</h1>
+    <H3>QUESTION1</H3>
+    <H2>A PROPER MEAL SHOULD CONTAIN A MAXIMUM CALORIES OF</H2>
+    <UL>
+        <li>10kg</li>
+        <li>5kg</li>
+        <li>2kg</li>
+        <li>not Sure</li>
+    </UL>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
